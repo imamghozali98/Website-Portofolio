@@ -592,4 +592,108 @@ body {
     .hero-image {
         width: 300px;   /* Lebih kecil lagi untuk layar HP */
     }
+}/* --- Perbaikan Khusus Tampilan HP (Responsive) --- */
+@media (max-width: 768px) {
+  
+  /* 1. Mengecilkan Header & Logo */
+  header {
+    padding: 15px 20px;
+    flex-direction: column; /* Menu jadi ke bawah jika perlu */
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.2rem !important;
+  }
+
+  /* 2. Mengecilkan Judul Utama (Transforming Ideas...) */
+  h1, .hero-content h1 {
+    font-size: 2.2rem !important; /* Ukuran lebih pas untuk jempol */
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* 3. Merapikan Deskripsi */
+  p, .hero-content p {
+    font-size: 1rem !important;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* 4. Mengatur Tombol agar Berjajar Rapi */
+  .cta-group {
+    display: flex;
+    flex-direction: column; /* Tombol tumpuk ke bawah di HP agar mudah diklik */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 90%; /* Tombol lebar agar mudah ditekan jari */
+    text-align: center;
+  }
+
+  /* 5. Mengecilkan Foto Profil agar Tidak Menutupi Layar */
+  .hero-image, img[alt="Imam Ghozali"] {
+    width: 250px !important; /* Ukuran ideal di HP */
+    margin: 30px auto 0 !important;
+    display: block;
+  }
+
+  /* 6. Merapikan Navigasi (Menu) */
+  nav ul {
+    display: none; /* Sembunyikan menu panjang, bisa diganti hamburger menu nanti */
+  }
+}/* --- KODE KHUSUS PERBAIKAN TAMPILAN HP --- */
+@media (max-width: 768px) {
+    /* 1. Mengecilkan ukuran teks judul agar tidak bertumpuk */
+    h1, .hero-content h1 {
+        font-size: 1.8rem !important; /* Ukuran lebih kecil untuk HP */
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* 2. Menyesuaikan teks deskripsi */
+    p, .hero-content p {
+        font-size: 0.9rem !important;
+        text-align: center;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+
+    /* 3. Merapikan tombol (CTA) agar tidak terlalu besar */
+    .cta-group {
+        display: flex;
+        flex-direction: column; /* Tombol berjejer ke bawah */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 80%; /* Lebar tombol menyesuaikan layar HP */
+        padding: 12px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* 4. Mengecilkan foto profil agar proporsional */
+    .hero-image, img[alt="Imam Ghozali"] {
+        width: 180px !important; /* Foto tidak lagi memenuhi layar */
+        height: auto;
+        margin: 20px auto !important;
+        display: block;
+    }
+
+    /* 5. Merapikan Header & Tombol Contact Me */
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-btn {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
 }
