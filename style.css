@@ -696,4 +696,86 @@ body {
         font-size: 0.8rem;
         padding: 8px 15px;
     }
+@media (max-width: 768px) {
+    /* 1. Atur Jarak Section agar tidak terlalu mepet ke atas */
+    .hero {
+        padding-top: 100px !important;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* 2. Ukuran Judul Utama */
+    .hero-content h1 {
+        font-size: 1.8rem !important; /* Ukuran pas untuk HP */
+        margin: 15px 0;
+        line-height: 1.2;
+    }
+
+    /* 3. Atur Deskripsi agar Nyaman Dibaca */
+    .hero-content p {
+        font-size: 0.9rem !important;
+        padding: 0 10px;
+        margin-bottom: 25px;
+    }
+
+    /* 4. Perbaikan Tombol agar Sejajar (Side by Side) */
+    .hero-actions {
+        display: flex;
+        flex-direction: row; /* Berjajar ke samping */
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .btn-main, .btn-sec {
+        padding: 10px 15px !important;
+        font-size: 0.85rem !important;
+        flex: 1; /* Lebar seimbang */
+        max-width: 150px;
+        white-space: nowrap;
+    }
+
+    /* 5. Ukuran Foto Profil */
+    .hero-image {
+        width: 200px !important; /* Perkecil sedikit agar proporsional */
+        margin-top: 30px;
+    }
+
+    /* 6. Header (Navbar) */
+    header {
+        height: 70px;
+    }
+    .logo {
+        font-size: 1.1rem !important;
+    }
+    .cta-nav {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}.hero { 
+    display: flex; 
+    flex-direction: row; /* Memaksa satu baris */
+    align-items: center; 
+    justify-content: space-between;
+    width: 1000px; /* Lebar tetap sesuai container */
+    gap: 20px;
+}
+
+.hero-content {
+    flex: 1; /* Memberi ruang untuk teks */
+    min-width: 500px; 
+}
+
+.hero-visual {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image {
+    width: 100%; 
+    max-width: 400px; /* Ukuran foto tetap proporsional */
+    height: auto;
 }
