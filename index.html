@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imam Ghozali | Content Specialist & Editor</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+  /* 1. Pengaturan Dasar Latar Belakang */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c111d; /* Warna gelap sesuai screenshot */
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* 2. Kontainer Animasi Latar Belakang */
+  .bg-animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Supaya di belakang teks/gambar */
+    overflow: hidden;
+    filter: blur(100px); /* Membuat efek cahaya lembut/aura */
+    pointer-events: none; /* Supaya tidak mengganggu klik mouse */
+  }
+
+  /* 3. Bola-bola Cahaya (Aura) */
+  .aura-ball {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  /* Bola Biru di Kiri Atas */
+  .aura-1 {
+    width: 500px;
+    height: 500px;
+    background: #1e3a8a;
+    top: -100px;
+    left: -100px;
+    animation: moveSlow 20s infinite alternate ease-in-out;
+  }
+
+  /* Bola Kuning (Aksen Visual Impact) di Kanan Bawah */
+  .aura-2 {
+    width: 400px;
+    height: 400px;
+    background: #f9c900;
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.2; /* Dibuat tipis agar tidak mengganggu */
+    animation: moveSlow 25s infinite alternate-reverse ease-in-out;
+  }
+
+  /* 4. Animasi Gerakan Halus */
+  @keyframes moveSlow {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(50px, 30px) scale(1.1); }
+    100% { transform: translate(-30px, 50px) scale(1); }
+  }
+
+  /* 5. Styling untuk Footer (Closing) */
+  .footer-portfolio {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-top: 100px;
+  }
+
+  .footer-portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f9c900; /* Warna kuning sesuai tema */
+  }
+
+  .footer-socials {
+    margin: 25px 0;
+  }
+
+  .footer-socials a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .footer-socials a:hover {
+    color: #f9c900;
+    transform: translateY(-5px);
+    display: inline-block;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #94a3b8;
+  }
+</style>
+
+<!-- ELEMEN ANIMASI -->
+<div class="bg-animation-container">
+  <div class="aura-ball aura-1"></div>
+  <div class="aura-ball aura-2"></div>
+</div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="container">
+            <div class="logo">IMAM<span>GHOZALI</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+            </ul>
+            <a href="https://wa.me/6285157719318" class="cta-nav">Contact Me</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="profil imam.png" class="hero container">
+            
+            <div class="hero-content" data-aos="fade-right">
+                <span class="badge">Content Specialist & Media Editor</span>
+                <h1>Transforming Ideas Into <span>Visual Impact.</span></h1>
+                <p>Spesialis dalam manajemen media sosial dan pengeditan video profesional. Berfokus pada kualitas visual untuk meningkatkan keterlibatan audiens.</p>
+                <div class="hero-actions">
+                    <a href="#about-me" class="btn-main">Lihat Portfolio</a>
+                    <a href="https://wa.me/6285157719318" class="btn-sec"><i class="fa-brands fa-whatsapp"></i> Chat Saya</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="zoom-in">
+                <div class="image-wrapper">
+                    <img src="profil imam 3.png" class="hero-image" alt="Imam Ghozali">
+                </div>
+            </div>
+        </section>
+
+       <section id="about-me" class="container about-section">
+    <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+            <h2 class="title-highlight">Siapa <span>Imam Ghozali?</span></h2>
+            <p class="bio-description">
+                Lahir di Tegal pada 10 Desember 1998, saya adalah seorang kreator yang menggabungkan ketekunan teknik dengan kreativitas visual. 
+                Sejak lulus tahun 2017 dari SMK Negeri 2 Adiwerna, saya terus mengasah kemampuan dalam dunia multimedia dan komunikasi.
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tegal, Indonesia</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Sertifikat Gada Pratama</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>SIM A Active</span>
+                </div>
+            </div>
+
+            <div class="expertise-list">
+                <div class="expertise-item" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-camera"></i>
+                    <h4>Fotografi</h4>
+                    <p>Kontributor aktif stock photo alam & jalanan.</p>
+                </div>
+                <div class="expertise-item" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <h4>Video Editing</h4>
+                    <p>Ahli dalam ringkasan konten & micro-drama.</p>
+                </div>
+                <div class="expertise-item" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Social Media</h4>
+                    <p>Strategi branding & pengelolaan konten digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </section>
+        <!-- Showcase Hasil Karya -->
+<section id="works" class="portfolio-showcase container">
+    <div class="section-header" data-aos="fade-up">
+        <h2 class="title-highlight">Hasil Kerja <span>Nyata.</span></h2>
+        <p>Eksplorasi kreativitas dalam visual dan strategi konten.</p>
+    </div>
+
+    <div class="works-grid">
+        <!-- Karya 1: Fotografi -->
+        <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="work-img">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800" alt="Nature Photography">
+                <div class="work-overlay">
+                    <a href="https://drive.google.com/drive/folders/1FrEET0oHJJIBucGmAA9LxfRy1xHkbpkE?usp=sharing" class="btn-view">Detail Karya <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="work-info">
+                <span class="category">Photography</span>
+                <h3>Nature & Street Scenes</h3>
+                <p>Kontribusi aktif pada platform stock photo dengan fokus pemandangan alam dan street photography.</p>
+            </div>
+        </div>
+
+        <!-- Karya 2: Video Editing -->
+        <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-img">
+                <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800" alt="Video Editing">
+                <div class="work-overlay">
+                    <a href="https://drive.google.com/drive/folders/1-1lWVJQ7wmIYaGZh_ZiLsaDel6qdkvM1?usp=sharing" class="btn-view">Putar Demo <i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+            <div class="work-info">
+                <span class="category">Video Editing</span>
+                <h3>Cinematic Micro-Drama</h3>
+                <p>Produksi konten video kreatif dan ringkasan media untuk meningkatkan engagement.</p>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+</section>
+
+        <!-- Timeline Section (Experience & Education) -->
+        <section id="experience" class="timeline-section container">
+            <div class="timeline-grid">
+                <!-- Pengalaman -->
+                <div class="work-exp" data-aos="fade-up">
+                    <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja</h2>
+                     <div class="card">
+                        <span class="date">2026</span>
+                        <h3>Admin & Content Creator</h3>
+                        <p class="company">zO's The Label</p>
+                        <p class="desc">Mengelola komunikasi pelanggan, memproses pesanan, dan mengatur data penjualan & Membuat dan mengelola konten digital untuk meningkatkan engagement dan penjualan..</p>
+                    </div>
+                    <div class="card">
+                        <span class="date">2023 - 2024</span>
+                        <h3>Media & Social Media Division</h3>
+                        <p class="company">PT. SKM DESIGN ARCHITEC</p>
+                        <p class="desc">Mengelola strategi konten dan aset digital untuk jasa desain rumah.</p>
+                    </div>
+                    <div class="card">
+                        <span class="date">2019 - 2023</span>
+                        <h3>Security & Driver</h3>
+                        <p class="company">Toko Emas Kencana</p>
+                    </div>
+                    <div class="card">
+                        <span class="date">2017-2018</span>
+                        <h3>Editor & Media</h3>
+                        <p class="company">Bagus Studio</p>
+                    </div>
+                </div>
+
+                <!-- Pendidikan -->
+                <div id="education" class="edu-exp" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h2>
+                    <div class="card">
+                        <span class="date">2014 - 2017</span>
+                        <h3>Teknik Furnitur</h3>
+                        <p class="company">SMK Negeri 2 Adiwerna</p>
+                    </div>
+                    <div class="card">
+                        <span class="date">2011 - 2014</span>
+                        <h3>Pendidikan Menengah</h3>
+                        <p class="company">UPTD SKB Adiwerna</p>
+                    </div>
+                    <div class="card">
+                        <span class="date">Lulus 2011</span>
+                        <h3>Pendidikan Dasar</h3>
+                        <p class="company">SD Negeri 4 Ujungrusi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section container">
+            <h2 class="title-highlight" data-aos="fade-up">Mastery <span>Level.</span></h2>
+            <div class="skills-wrapper">
+                <div class="skill-bar-box" data-aos="fade-right">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Filmora</span><span>90%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Capcut / VN</span><span>85%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Adobe Premiere</span><span>75%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+                    </div>
+                </div>
+                <div class="skill-description" data-aos="fade-left">
+                    <p>Mahir dalam mengoperasikan berbagai perangkat lunak multimedia untuk kebutuhan komersial, mulai dari editing video pendek hingga manajemen konten visual yang kompleks.</p>
+                </div>
+            </div>
+            <main>
+                <spase></spase>
+            </main>
+        </section>
+        <br>
+       <br>
+<section id="skills-design" class="info-section container">
+    <div class="section-header" data-aos="fade-up">
+        <h2 class="title-highlight">Skills level <span>design</span></h2>
+    </div>
+    
+    <div class="skills-design-wrapper">
+        <!-- Donut Chart -->
+        <div class="chart-container" data-aos="zoom-in">
+            <div class="donut-chart">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" class="base"></circle>
+                    <circle cx="50" cy="50" r="40" class="segment canva" style="stroke-dasharray: 125.6 251.2; stroke-dashoffset: 0;"></circle>
+                    <circle cx="50" cy="50" r="40" class="segment photoshop" style="stroke-dasharray: 62.8 251.2; stroke-dashoffset: -125.6;"></circle>
+                    <circle cx="50" cy="50" r="40" class="segment pixellab" style="stroke-dasharray: 37.6 251.2; stroke-dashoffset: -188.4;"></circle>
+                    <circle cx="50" cy="50" r="40" class="segment other" style="stroke-dasharray: 25.2 251.2; stroke-dashoffset: -226;"></circle>
+                </svg>
+                <div class="chart-center">
+                    <i class="fa-solid fa-gear fa-spin"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend & Stats -->
+        <div class="stats-grid">
+            <div class="stat-box" data-aos="fade-left" data-aos-delay="100">
+                <div class="dot gray"></div>
+                <div class="stat-info">
+                    <h4 class="counter">50</h4><span>%</span>
+                    <p>Canva</p>
+                </div>
+            </div>
+            <div class="stat-box" data-aos="fade-left" data-aos-delay="200">
+                <div class="dot light-gray"></div>
+                <div class="stat-info">
+                    <h4 class="counter">25</h4><span>%</span>
+                    <p>Photoshop</p>
+                </div>
+            </div>
+            <div class="stat-box" data-aos="fade-left" data-aos-delay="300">
+                <div class="dot yellow"></div>
+                <div class="stat-info">
+                    <h4 class="counter">15</h4><span>%</span>
+                    <p>Pixellab</p>
+                </div>
+            </div>
+            <div class="stat-box" data-aos="fade-left" data-aos-delay="400">
+                <div class="dot dark"></div>
+                <div class="stat-info">
+                    <h4 class="counter">10</h4><span>%</span>
+                    <p>Other</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="chart-caption" data-aos="fade-up">Grafik diatas merupakan tingkat keahlian penggunaan software didalam PC maupun Smartphone.</p>
+</section>
+
+    </main> 
+    <footer>
+    <!-- ELEMEN CLOSING (FOOTER) -->
+<footer class="footer-portfolio">
+  <h2>Ayo Buat Sesuatu yang Luar Biasa!</h2>
+  <p>Siap membantu kebutuhan Video Editing, Content Creator, dan Media Strategist Anda.</p>
+  
+
+  <p class="copyright">&copy; 2026 Imam Ghozali. All Rights Reserved.</p>
+</footer>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+    </script>
+</body>
+</html>
